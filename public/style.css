@@ -5,6 +5,7 @@
     font-size: 15px;
 }
 
+
 html {
     /*Rolagem*/
     scroll-behavior: smooth;
@@ -12,12 +13,12 @@ html {
 
 /*cabecario*/
 header {
-    padding: 40px 4%;
+    padding: 40px 40px 0px;
 }
 
 
 header a {
-    color: #0074b8;
+    color: #14213d;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -25,7 +26,7 @@ header a {
 }
 
 header a:hover {
-    color: #33b4ff;
+    color: #000000;
     transform: scale(1.15);
 
 }
@@ -45,9 +46,9 @@ header nav ul li {
 header .btn-contato button {
     font-size: 18px;
     font-weight: 700;
-    background-color: #0074b8;
+    background-color: #14213d;
     border: 0;
-    border-radius: 35px;
+    border-radius: 5px;
     cursor: pointer;
     color: white;
     height: 40px;
@@ -56,7 +57,7 @@ header .btn-contato button {
 }
 
 header .btn-contato button:hover {
-    box-shadow: 0px 0px 8px #053f61;
+    box-shadow: 0px 0px 8px #000000;
 }
 
 
@@ -76,15 +77,15 @@ main {
 
 .txt-viagem h2 {
     font-size: 30px;
-    color: #0074b8;
+    color: #14213d;
 }
 
 .btn-interesse button {
     width: 140px;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 5px;
     border: none;
-    background-color: #0074b8;
+    background-color: #14213d;
     color: white;
     cursor: pointer;
 
@@ -108,7 +109,7 @@ form .btn-enviar input:hover {
 .img-viagem img {
     height: auto;
     width: 500px;
-    border-radius: 15px;
+    border-radius: 10px;
 
 }
 
@@ -147,7 +148,7 @@ section .vacation {
 }
 
 .vacation h3 {
-    color: #0074b8;
+    color: #14213d;
 }
 
 h2.titulo {
@@ -157,7 +158,7 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #0074b8;
+    color: #14213d;
     font-size: 38px;
 }
 
@@ -186,7 +187,6 @@ section.depoimento {
     transition: .2s;
     padding: 40px;
     margin-top: 45px;
-    border-radius: 20px;
 }
 
 .testemunhas img {
@@ -211,7 +211,7 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: rgb(234, 234, 234);
+    background-color: #e5e5e5;
     border: 0;
     outline: 0;
     padding: 20px 15px;
@@ -225,16 +225,16 @@ form textarea {
 }
 
 form .btn-enviar {
-    margin-top: 20px;
     text-align: center;
 }
 
 
 form .btn-enviar input {
     width: 120px;
-    background-color: #0074b8;
+    background-color: #14213d;
     font-weight: 700;
     cursor: pointer;
+
 }
 
 /*FOOTER*/
@@ -250,17 +250,15 @@ footer {
 }
 
 
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.volta .flex button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
     border: none;
-    background-color: #0074b8;
-    font-size: 22px;
+    padding: 0;
     cursor: pointer;
-    margin: 0 5px;
-    transform: 0.2s;
-
+    color: #14213d;
 }
 
 .btn-social button:hover {
@@ -283,39 +281,10 @@ footer .linha-footer {
 }
 
 .borda {
-    border-top: solid 3px #0074b8;
+    border-top: solid 3px #14213d;
 }
 
 /* PAGINAS DE CADA DESTINO */
-
-.volta {
-    padding: 40px 4%;
-}
-
-.volta button img {
-    height: 30px;
-}
-
-.volta button {
-    border: none;
-    background-color: white;
-}
-
-.volta .flex button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    color: #0074b8;
-}
-
-
-.flex button p {
-    margin: 0;
-}
 
 .pais {
     padding: 40px 4%;
@@ -338,7 +307,7 @@ p {
 
 h3 {
     font-size: 35px;
-    color: #0074b8;
+    color: #14213d;
 }
 
 .pais .roteiro p {
@@ -360,7 +329,7 @@ h4 {
     font-size: 35px;
     text-align: center;
     margin-bottom: 40px;
-    color: #0074b8;
+    color: #14213d;
 }
 
 .cidades h4 img {
@@ -368,7 +337,7 @@ h4 {
 }
 
 h2 {
-    color: #0074b8;
+    color: #14213d;
 }
 
 .mapa button:hover {
@@ -391,7 +360,6 @@ h2 {
 }
 
 .imagens img {
-    display: flex;
     height: 230px;
     width: auto;
     border-radius: 15px;
@@ -436,47 +404,48 @@ h2 {
         padding: 40px 8%;
         margin-top: -50px;
     }
-    
-    .depoimento .testemunhas{
+
+    .depoimento .testemunhas {
         margin-top: -50px;
     }
 
-    .btn-interesse{
+    .btn-interesse {
         text-align: center;
     }
 
-    .pais .imagens img{
+    .pais .imagens img {
         height: 200px;
     }
+
     p {
 
         font-size: 16px;
     }
-    
+
     h3 {
         font-size: 20px;
     }
-    
+
     .pais .roteiro p {
         margin: 20px 9px;
-    
+
     }
-    
+
     .pais p {
         margin: 20px 38px;
     }
-    
+
     .pais h2 {
         margin: 12px 38px;
     }
-    
-    
+
+
     h4 {
         font-size: 25px;
     }
 
     .mapa img {
-        width: 350px ;
+        width: 350px;
         height: 450px;
     }
 }
@@ -545,4 +514,35 @@ h2 {
 .btn-detalhes:hover {
     background-color: #000000;
     color: #fff !important;
+}
+
+.detalhes-wrapper {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-custom {
+    width: 350px;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.btn-voltar {
+    background-color: #14213d;
+    color: white;
+    border: none;
+}
+
+.btn-voltar:hover {
+    background-color: #0e1a2e;
+    color: white;
 }

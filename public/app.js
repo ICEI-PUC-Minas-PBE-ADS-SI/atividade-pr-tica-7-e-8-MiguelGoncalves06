@@ -45,9 +45,32 @@ const dados = [
       `
     }
   ];
-
+  
+  // Aplica somente se for a página de detalhes
+  if (window.location.pathname.includes("detalhes.html")) {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const item = dados.find(d => d.id === id);
+  
+    const container = document.getElementById("detalhes-container");
+    const extras = document.getElementById("extras-container");
+  
+    if (item) {
+      container.innerHTML = `
+        <h1 class="mb-3 text-center">${item.titulo}</h1>
+        <img src="${item.imagem}" alt="${item.titulo}" class="img-fluid mb-3">
+        <p><strong>Resumo:</strong> ${item.descricao}</p>
+        <p>${item.conteudo}</p>
+      `;
+      extras.innerHTML = `<h4>Informações Extras</h4>${item.extras}`;
+    } else {
+      container.innerHTML = `<p>Pacote não encontrado.</p>`;
+      extras.style.display = "none";
+    }
+  }
+  
   // HOME
-if (document.getElementById("container-cards")) {
+  if (document.getElementById("container-cards")) {
     const container = document.getElementById("container-cards");
   
     dados.forEach(item => {
@@ -62,3 +85,21 @@ if (document.getElementById("container-cards")) {
       container.appendChild(card);
     });
   }
+  
+  //LOOP
+  card.innerHTML = `
+    <div class="card">
+      <img src="${destino.imagem}" alt="${destino.nome}">
+      <div class="card-body">
+        <h5>${destino.nome}</h5>
+        <p>${destino.descricao}</p>
+        <a href="detalhes.html?id=${destino.id}" class="btn btn-primary">Ver Detalhes</a>
+      </div>
+    </div>
+  `;
+  
+  
+  
+  
+  
+  
