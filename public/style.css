@@ -1,0 +1,483 @@
+/*configuracoes gerais*/
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+html {
+    /*Rolagem*/
+    scroll-behavior: smooth;
+}
+
+/*cabecario*/
+header {
+    padding: 40px 4%;
+}
+
+
+header a {
+    color: #0074b8;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 18px;
+}
+
+header a:hover {
+    color: #33b4ff;
+    transform: scale(1.15);
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 60px;
+    list-style-type: none;
+
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+header .btn-contato button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #0074b8;
+    border: 0;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    width: 140px;
+
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #053f61;
+}
+
+
+
+/* estilo viagens */
+
+main {
+    margin: 40px 2%;
+}
+
+
+.txt-viagem p {
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.txt-viagem h2 {
+    font-size: 30px;
+    color: #0074b8;
+}
+
+.btn-interesse button {
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #0074b8;
+    color: white;
+    cursor: pointer;
+
+}
+
+.interface {
+    margin-bottom: 60px;
+}
+
+main .btn-interesse button:hover,
+form .btn-enviar input:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.img-viagem img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.img-viagem img {
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+
+}
+
+/*section: vacations*/
+section .vacation {
+    padding: 80px 4%;
+
+}
+
+
+.vacation .Pagina-Inicial {
+    color: black;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.vacation .Pagina-Inicial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(153, 153, 153, 0.695);
+}
+
+.vacation .Pagina-Inicial img {
+    height: 80px;
+}
+
+.vacation .Pagina-Inicial h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.vacation .Pagina-Inicial p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.vacation h3 {
+    color: #0074b8;
+}
+
+h2.titulo {
+    color: black;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #0074b8;
+    font-size: 38px;
+}
+
+
+/*DEPOIMENTO DOS CLIENTES*/
+
+section.depoimento {
+    padding: 40px 4%;
+}
+
+.depoimento .titulo {
+    margin-bottom: 40px;
+}
+
+.depoimento p {
+    font-size: 18px;
+}
+
+.depoimento .testemunhas:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(153, 153, 153, 0.695);
+}
+
+.depoimento .testemunhas {
+    border-radius: 20px;
+    transition: .2s;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+}
+
+.testemunhas img {
+    height: 30px;
+    width: auto;
+}
+
+/*FORM*/
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #0074b8;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+.logo-footer img {
+    height: 110px;
+    width: auto;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(221, 221, 221, 0.43);
+}
+
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0074b8;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transform: 0.2s;
+
+}
+
+.btn-social button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+
+}
+
+.btn-social img {
+    width: 25px;
+}
+
+footer .linha-footer p a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .linha-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: solid 3px #0074b8;
+}
+
+/* PAGINAS DE CADA DESTINO */
+
+.volta {
+    padding: 40px 4%;
+}
+
+.volta button img {
+    height: 30px;
+}
+
+.volta button {
+    border: none;
+    background-color: white;
+}
+
+.volta .flex button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #0074b8;
+}
+
+
+.flex button p {
+    margin: 0;
+}
+
+.pais {
+    padding: 40px 4%;
+    margin-top: -90px;
+}
+
+.pais img {
+    height: 30px;
+}
+
+.pais .mapa img {
+    height: 450px;
+    border-radius: 35px;
+}
+
+p {
+
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 35px;
+    color: #0074b8;
+}
+
+.pais .roteiro p {
+    margin: 20px 90px;
+    text-align: justify;
+}
+
+.pais p {
+    margin: 20px 38px;
+    text-align: justify;
+}
+
+.pais h2 {
+    margin: 12px 38px;
+}
+
+
+h4 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0074b8;
+}
+
+.cidades h4 img {
+    height: 35px;
+}
+
+h2 {
+    color: #0074b8;
+}
+
+.mapa button:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.mapa button {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.imagens img {
+    display: flex;
+    height: 230px;
+    width: auto;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1212px) {
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .viagens {
+        flex-direction: column-reverse;
+    }
+
+    /* header */
+    .Navegacao,
+    .btn-contato {
+        display: none;
+    }
+
+    header {
+        margin-bottom: -100px;
+    }
+
+    /*  imagens*/
+
+    .img-viagem img {
+        height: auto;
+        width: 360px;
+
+    }
+
+    /*DEPOIMENTO DOS CLIENTES*/
+
+    section.depoimento {
+        padding: 40px 8%;
+        margin-top: -50px;
+    }
+    
+    .depoimento .testemunhas{
+        margin-top: -50px;
+    }
+
+    .btn-interesse{
+        text-align: center;
+    }
+
+    .pais .imagens img{
+        height: 200px;
+    }
+    p {
+
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    .pais .roteiro p {
+        margin: 20px 9px;
+    
+    }
+    
+    .pais p {
+        margin: 20px 38px;
+    }
+    
+    .pais h2 {
+        margin: 12px 38px;
+    }
+    
+    
+    h4 {
+        font-size: 25px;
+    }
+
+    .mapa img {
+        width: 350px ;
+        height: 450px;
+    }
+}
+

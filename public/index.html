@@ -1,13 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Home Page</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
+
+    <header> <!--Cabecario ( Navegacao )-->
+        <div class="interface d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <img src="Img/Agencia Logo.png" alt="Logo do Agencia"> <!--Logo da agencia-->
+            </div>
+            <nav class="Navegacao ">
+                <ul class="d-flex">
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#sobre">Sobre Nos</a></li>
+                    <li><a href="#avaliações">Avaliações</a></li>
+                    <li><a href="#duvida">Duvidas</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Cadastre-se</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="vigens" id="destinos"> <!--Locais de Viagem-->
+            <div class="interface container">
+                <div class="flex d-flex align-items-center justify-content-between">
+                    <div class="img-viagem">
+                        <img src="Img/paris.jpg" alt="Imagem paris">
+                    </div>
+                    <div class="txt-viagem col-md-6">
+                        <h2>Viagem para Paris</h2>
+                        <p>Para os amantes da cultura e da sofisticação, Paris, a Cidade Luz, é um dos destinos mais
+                            icônicos do mundo. Com sua arquitetura magnífica, museus renomados e uma gastronomia
+                            incomparável, a capital francesa encanta visitantes de todas as partes. A Torre Eiffel,
+                            símbolo da cidade, é parada obrigatória para quem deseja contemplar uma vista deslumbrante
+                            de Paris, enquanto o Museu do Louvre abriga algumas das obras mais famosas da história da
+                            arte. Caminhar às margens do Rio Sena, explorar as charmosas ruas de Montmartre e degustar
+                            um autêntico croissant em um café parisiense são experiências inesquecíveis para qualquer
+                            viajante.
+                        <div class="btn-interesse">
+                            <a href="franca.html"><button>Tenho Interesse</button></a>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="viagem-maldivas">
+                    <div class="flex  d-flex align-items-center justify-content-between">
+                        <div class="img-viagem">
+                            <img src="Img/maldivas.jpg" alt="Imagem maldivas">
+                        </div>
+
+                        <div class="txt-viagem col-md-6">
+                            <h2>Viagem para Maldivas</h2>
+                            <p>As Ilhas Maldivas são um verdadeiro paraíso tropical, conhecidas por suas águas
+                                cristalinas, praias de areia branca e bangalôs luxuosos sobre o mar. O destino é
+                                perfeito para quem busca tranquilidade e experiências exclusivas, como mergulhar entre
+                                recifes de corais repletos de vida marinha ou desfrutar de um jantar romântico à
+                                beira-mar. O clima tropical e a hospitalidade local tornam essa viagem inesquecível para
+                                casais em lua de mel e amantes da natureza.
+                            <div class="btn-interesse">
+                                <a href="maldivas.html"><button>Tenho Interesse</button></a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viagem-Porto">
+                    <div class="flex d-flex align-items-center justify-content-between">
+                        <div class="img-viagem">
+                            <img src="Img/images (2).jpg" alt="Imagem porto">
+                        </div>
+
+                        <div class="txt-viagem col-md-6">
+                            <h2>Viagem para Porto, Portugal</h2>
+                            <p>Porto, uma das cidades mais encantadoras de Portugal, é um destino onde história, cultura
+                                e gastronomia se encontram em harmonia. Com suas ruas medievais no bairro da Ribeira, a
+                                cidade oferece um charme único com casas coloridas e vistas deslumbrantes do Rio Douro.
+                                Além disso, Porto é famosa pelas suas caves de vinho do Porto, onde é possível aprender
+                                sobre a produção e degustar a bebida local. A cidade também abriga maravilhas
+                                arquitetônicas como a Ponte Dom Luís I e a imponente Livraria Lello, considerada uma das
+                                mais belas do mundo. Porto é o lugar perfeito para quem busca uma experiência autêntica
+                                e inesquecível, mesclando o antigo e o moderno de forma deslumbrante.
+                            <div class="btn-interesse">
+                                <a href="porto.html"><button>Tenho Interesse</button></a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vacation" id="sobre"> <!--empresa ficticia-->
+            <div class="container vacation">
+                <h2 class="titulo">SOBRE A <span>VACATION</span> </h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="Pagina-Inicial">
+                            <img src="Img/globe.png" alt="Globo">
+                            <h3>Pagina Inicial</h3>
+                            <p>Descubra o mundo com a Vacation - Sua próxima aventura começa aqui! Oferecemos pacotes
+                                de viagem personalizados para todos os destinos dos seus sonhos, desde praias
+                                paradisíacas até
+                                cidades vibrantes. Nós cuidamos de todos os detalhes para que você possa desfrutar ao
+                                máximo da
+                                sua experiência.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="Pagina-Inicial">
+                            <img src="Img/ticket-flight.png" alt="ticket">
+                            <h3>Viagens</h3>
+                            <p>Explore nossos destinos mais procurados e encontre a inspiração para sua próxima jornada.
+                                De
+                                Paris à deslumbrante Lagoa Azul no Brasil, das paradisíacas Maldivas ao encantador Porto
+                                em
+                                Portugal, temos opções para todos os gostos e orçamentos.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="Pagina-Inicial">
+                            <img src="Img/opinion.png" alt="comentarios">
+                            <h3>Avaliações</h3>
+                            <p>A Vacation é reconhecida por suas excelentes avaliações, refletindo o compromisso com a
+                                satisfação dos nossos clientes. Com destinos que vão desde a romântica Paris, passando
+                                pelas
+                                paradisíacas Maldivas e o charmoso Porto em Portugal,
+                                nossos viajantes elogiam a atenção aos detalhes, o serviço personalizado e a qualidade
+                                das
+                                experiências que proporcionamos. Sua próxima aventura começa com uma agência que você
+                                pode
+                                confiar.</p>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="depoimento" id="avaliações"> <!--avaliacoes da empresa-->
+            <div class="container">
+                <h2 class="titulo">DEPOIMENTO DOS <span>CLIENTES</span></h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <article class="testemunhas">
+                            <img src="img/star-fill.svg" alt=""><img src="img/star-fill.svg" alt=""><img
+                                src="img/star-fill.svg" alt=""><img src="img/star-fill.svg" alt=""><img
+                                src="img/star-half.svg" alt="">
+                            <p class="testemunha-txt">"Fui para a França e tudo ocorreu sem problemas. Melhor
+                                experiência da
+                                minha vida!"</p>
+                            <p class="autor">- Carlos Menezes</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="testemunhas">
+                            <img src="img/star-fill.svg" alt=""><img src="img/star-fill.svg" alt=""><img
+                                src="img/star-fill.svg" alt=""><img src="img/star-fill.svg" alt=""><img
+                                src="img/star-fill.svg" alt="">
+                            <p class="testemunha-txt">"Minha lua de mel foi perfeita graças à agência. Hotel incrível e
+                                passeios
+                                inesquecíveis!"</p>
+                            <p class="autor">- Camila Ferreira</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="testemunhas">
+                            <img src="img/star-fill.svg" alt=""><img src="img/star-fill.svg" alt=""><img
+                                src="img/star-fill.svg" alt=""><img src="img/star-fill.svg" alt=""><img
+                                src="img/star-fill.svg" alt="">
+                            <p class="testemunha-txt">""Muito profissionalismo! Meu pacote para o Nordeste foi
+                                organizado
+                                com
+                                muito carinho."</p>
+                            <p class="autor">- Fernanda Silva</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario" id="duvida"> <!--formulario duvidas-->
+            <div class="interface">
+                <h2 class="titulo">ALGUMA <span>DUVIDA?</span> </h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu E-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu Celular:">
+                    <textarea name="" id="" placeholder="Sua Mensagem"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> <!--rodape (footer)-->
+        <div class="container">
+            <div class="linha-footer flex d-flex justify-content-between">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="Img/Agencia Logo.png" alt="Logo">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/goncalves.mgl/"><button><img src="Img/instagram.svg"
+                                    alt="instagram"></button></a>
+                        <a href="https://github.com/MiguelGoncalves06"><button><img src="Img/github.svg"
+                                    alt="github"></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linha-footer borda">
+                <p><img src="img/envelope-fill.svg" alt="Email"><a href=" mailto:migueldepaulagoncalves@gmail.com">
+                        migueldepaulagoncalves@gmail.com</a></p>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
